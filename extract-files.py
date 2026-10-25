@@ -40,7 +40,7 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libsfp_teegw.so'): blob_fixup()
-        .add_needed('libion.so')
+        .add_needed('libion_shim.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
